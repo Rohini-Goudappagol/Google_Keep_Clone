@@ -1,0 +1,93 @@
+.createComponentParentContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+   
+    .createComponentcontainer{
+        margin: 32px auto 16px auto;
+        border-radius: 8px;
+        /* min-height: 60px; */
+        width: 600px;
+        border: 1px solid #e0e0e0;
+        box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+        0 2px 6px 0 rgba(60, 64, 67, 0.15);
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        max-height: 600px;
+        background-size: cover;
+        background-repeat: repeat;
+        /* padding: 12px 16px 12px 16px; */
+
+    }
+    .titleContentInputContainer{
+        padding: 12px 16px;
+        outline: none;
+        letter-spacing: 0.01428571rem;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        color: rgba(32,33,36);
+    }
+    .notesContentInputContainer{
+         padding: 12px 16px; 
+         outline: none;
+         letter-spacing: 0.01428571rem;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+         color: rgba(32,33,36);
+    }
+
+    .noteFooterContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 4px ;
+        font-size: 12px;
+        line-height: 26px;
+        color: rgba(0,0,0,0.54);
+    }
+    .colorPalletBtn{
+        height: 32px;
+        width: 32px;
+        margin: 0px 8px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .closeBtn{   
+    color: rgba(0, 0, 0, 0.87);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.25rem;
+    font-size: .875rem;
+    letter-spacing: .0178571429em;
+    font-weight: 500;
+    height: 36px;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: none;
+    }
+
+    .colorPalletBtn:hover{
+         background-color: rgba(94,99,104,0.039);
+    }
+    .closeBtn:hover{
+        background-color: rgba(94,99,104,0.039);
+    }
+    
+}
+.titleContentInputContainer:empty::before{
+    content: attr(data-placeholder);
+     color: rgba(32,33,36);
+}
+.notesContentInputContainer:empty::before {
+     content: attr(data-placeholder);
+     color: rgba(32,33,36);
+}

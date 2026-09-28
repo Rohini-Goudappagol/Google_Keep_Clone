@@ -1,0 +1,19 @@
+.noteParentContainer{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+   
+
+    .noteContentContainer{
+        display: flex;
+        flex: 1;
+        
+    }
+    .childrenContentContainer{
+        flex: 1;
+       
+        
+    }
+}

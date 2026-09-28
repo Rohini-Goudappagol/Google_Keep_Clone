@@ -4,5 +4,17 @@
     display: flex;
     flex-direction: column;
     /* margin: 32px auto 16px auto; */
-   
+    .pinnedText{
+        color: rgb(95,99,104);
+        letter-spacing: 0.072rem;
+        font-size: 0.68rem;
+        font-weight: 500;
+        line-height: 1rem;
+        text-transform: uppercase;
+        margin: 32px 32px 8px;
+    }
+    .notesContentContainer{
+        columns: 400px;
+        margin: 15px;
+    }
 }

@@ -1,10 +1,11 @@
 import '../styles/home.css'
-import Header from './components/Header'
+import Createcomponent from './components/Createcomponent'
 
 const Home = () => {
     return(
         <div className='homeParentContainer'>
-            <Header/>
+            
+            <Createcomponent/>
         </div>
     )
 }
